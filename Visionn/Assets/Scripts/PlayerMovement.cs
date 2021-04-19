@@ -16,6 +16,10 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D myRB;
     private bool canJump;
     private SpriteRenderer mySprite;
+    public Animator anim;
+    public float currentSpeed, currentVertSpeed;
+    public Animator animator;
+    private int moving = 0;
 
     private void Start()
     {
@@ -23,8 +27,18 @@ public class PlayerMovement : MonoBehaviour
         mySprite = GetComponentInChildren<SpriteRenderer>();
     }
 
+     void Update()
+    {
+        currentSpeed = myRB.velocity.x;
+        currentVertSpeed = myRB.velocity.y;
+        animator.SetFloat("speed", Mathf.Abs(currentSpeed + moving));
+        animator.SetBool("canjump", canJump);
+        animator.SetFloat("vertspeed", currentVertSpeed);
+    }
+
     private void FixedUpdate()
     {
+
         if (moveDir > 0)
         {
             mySprite.flipX = false;

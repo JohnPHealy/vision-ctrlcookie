@@ -1,5 +1,5 @@
 sceneSetups:
-- path: C:/Users/regar/Documents/GitHub/totallynotacopyhm/tuesdaything/Assets/Scenes/metroidvania.unity
+- path: Assets/Scenes/Single Screen.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
