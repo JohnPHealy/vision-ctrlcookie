@@ -14,12 +14,13 @@ public class PlayerMovement : MonoBehaviour
 
     private float moveDir;
     private Rigidbody2D myRB;
-    private bool canJump;
+    public bool canJump;
     private SpriteRenderer mySprite;
-    public Animator anim;
     public float currentSpeed, currentVertSpeed;
     public Animator animator;
     private int moving = 0;
+    public bool onPressable;
+    public bool presseddowncorrect;
 
     private void Start()
     {
@@ -64,6 +65,11 @@ public class PlayerMovement : MonoBehaviour
             canJump = false;
         }
 
+        if (presseddowncorrect)
+        {
+
+            Debug.Log("detecteddown");
+        }
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -93,15 +99,43 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void Down(InputAction.CallbackContext context)
+    {
+        if (onPressable)
+        { if (!presseddowncorrect)
+            {
+                presseddowncorrect = true;
+            }
+
+            else presseddowncorrect = false;
+
+        }
+       
+
+    }
+
     void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.name.Equals("Platform"))
             this.transform.parent = col.transform;
+
+        if (col.gameObject.tag == "Pressable")
+        {
+            onPressable = true;
+            Debug.Log("Entered");        
+        }
     }
+
 
     void OnCollisionExit2D(Collision2D col)
     {
         if (col.gameObject.name.Equals("Platform"))
             this.transform.parent = null;
+
+        if (col.gameObject.tag == "Pressable")
+        {
+            onPressable = false;
+            Debug.Log("Left");
+        }
     }
 }
