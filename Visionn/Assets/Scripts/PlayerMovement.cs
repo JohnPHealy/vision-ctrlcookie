@@ -49,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
         {
             mySprite.flipX = true;
         }
+
         var moveAxis = Vector3.right * moveDir;
 
         if (Mathf.Abs(myRB.velocity.x) < maxSpeed)
