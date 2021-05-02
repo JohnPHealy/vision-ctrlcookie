@@ -138,4 +138,29 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("Left");
         }
     }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.name.Equals("Platform"))
+            this.transform.parent = col.transform;
+
+        if (col.gameObject.tag == "Pressable")
+        {
+            onPressable = true;
+            Debug.Log("Entered");
+        }
+    }
+
+
+    void OnTriggerExit2D(Collider2D col)
+{
+    if (col.gameObject.name.Equals("Platform"))
+            this.transform.parent = null;
+
+        if (col.gameObject.tag == "Pressable")
+        {
+            onPressable = false;
+            Debug.Log("Left");
+        }
+    }
 }

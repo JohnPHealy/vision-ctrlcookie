@@ -189,7 +189,7 @@ Transform:
   m_GameObject: {fileID: 4275432416347039338}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.25, y: 2.71, z: -5.0772433}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 4275432415881947753}
   - {fileID: 1762888248}
@@ -208,18 +208,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a06ee3aab78e84d8cd917b029a40d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 6.65
-  maxSpeed: 6.69
-  jumpForce: 4.79
+  moveSpeed: 8
+  maxSpeed: 8
+  jumpForce: 5
   groundCheck: {fileID: 4275432415881947754}
   groundLayers:
     serializedVersion: 2
     m_Bits: 64
   cancelJumpEnabled: 0
-  anim: {fileID: 0}
+  canJump: 0
   currentSpeed: 0
   currentVertSpeed: 0
   animator: {fileID: 1762888246}
+  onPressable: 0
+  presseddowncorrect: 0
 --- !u!70 &4275432416347039333
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -314,6 +316,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: f413331f-bb78-4814-8dd5-789d72bc5b38
     m_ActionName: 2D player/New action[/Keyboard/d,/Keyboard/a]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4275432416347039337}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: Down
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: eb9b914b-2bc4-4d92-bc94-7bac38a08c75
+    m_ActionName: 2D player/Down[/Keyboard/s]
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: keyboard
   m_DefaultActionMap: 2D player
