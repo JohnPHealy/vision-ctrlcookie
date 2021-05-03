@@ -39,4 +39,11 @@ public class buttonontrigger1 : MonoBehaviour
             isPlayer = true;
         }
     }
+    void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Player")
+        {
+            isPlayer = false;
+        }
+    }
 }

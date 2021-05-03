@@ -343,6 +343,17 @@
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/button4stuff.cs"
 "Assets/Scripts/buttonontrigger1.cs"
+"Assets/Scripts/buttonontrigger10.cs"
+"Assets/Scripts/buttonontrigger11.cs"
+"Assets/Scripts/buttonontrigger12.cs"
+"Assets/Scripts/buttonontrigger2.cs"
+"Assets/Scripts/buttonontrigger3.cs"
+"Assets/Scripts/buttonontrigger4.cs"
+"Assets/Scripts/buttonontrigger5.cs"
+"Assets/Scripts/buttonontrigger6.cs"
+"Assets/Scripts/buttonontrigger7.cs"
+"Assets/Scripts/buttonontrigger8.cs"
+"Assets/Scripts/buttonontrigger9.cs"
 "Assets/Scripts/PlayerMovement.cs"
 -langversion:8.0
 
