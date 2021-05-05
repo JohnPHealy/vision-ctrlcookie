@@ -9,6 +9,7 @@ TagManager:
   - Door
   - pickupblue
   - pickupred
+  - Key
   layers:
   - Default
   - TransparentFX

@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     private int moving = 0;
     public bool onPressable;
-    public bool presseddowncorrect;
+    public bool presseddowncorrect, dnkey, onKey;
     private bool bluepickup, redpickup;
 
     private void Start()
@@ -107,6 +107,16 @@ public class PlayerMovement : MonoBehaviour
 
     public void Down(InputAction.CallbackContext context)
     {
+        if (onKey)
+        {
+            if (!dnkey)
+            {
+                dnkey = true;
+            }
+
+            else dnkey = false;
+        }
+
         if (onPressable)
         { if (!presseddowncorrect)
             {
@@ -114,10 +124,8 @@ public class PlayerMovement : MonoBehaviour
             }
 
             else presseddowncorrect = false;
-
         }
        
-
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -129,6 +137,12 @@ public class PlayerMovement : MonoBehaviour
         {
             onPressable = true;
             Debug.Log("Entered");        
+        }
+
+        if (col.gameObject.tag == "Key")
+        {
+            onKey = true;
+            Debug.Log("onkey");
         }
     }
 
@@ -143,6 +157,12 @@ public class PlayerMovement : MonoBehaviour
             onPressable = false;
             Debug.Log("Left");
         }
+            if (col.gameObject.tag == "Key")
+            {
+                onKey = false;
+                Debug.Log("offkey");
+            }
+        
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -159,12 +179,10 @@ public class PlayerMovement : MonoBehaviour
         if (col.gameObject.tag == "pickupblue")
         {
             bluepickup = true;
-            Debug.Log("blue");
         }
         if (col.gameObject.tag == "pickupred")
         {
             redpickup = true;
-            Debug.Log("red");
         }
     }
 
