@@ -1,3 +1,4 @@
+//it's not really movement anymore and rather is all of the player but oh well
 
 using System;
 using System.Collections;
@@ -21,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     private int moving = 0;
     public bool onPressable;
     public bool presseddowncorrect;
+    private bool bluepickup, redpickup;
 
     private void Start()
     {
@@ -66,10 +68,13 @@ public class PlayerMovement : MonoBehaviour
             canJump = false;
         }
 
-        if (presseddowncorrect)
+        if (bluepickup)
         {
-
-            Debug.Log("detecteddown");
+            jumpForce = 8;
+        }
+        if (redpickup)
+        {
+            moveSpeed = 12;
         }
     }
 
@@ -149,6 +154,17 @@ public class PlayerMovement : MonoBehaviour
         {
             onPressable = true;
             Debug.Log("Entered");
+        }
+
+        if (col.gameObject.tag == "pickupblue")
+        {
+            bluepickup = true;
+            Debug.Log("blue");
+        }
+        if (col.gameObject.tag == "pickupred")
+        {
+            redpickup = true;
+            Debug.Log("red");
         }
     }
 

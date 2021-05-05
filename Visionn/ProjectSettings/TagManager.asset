@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Pressable
   - Ground
+  - Door
+  - pickupblue
+  - pickupred
   layers:
   - Default
   - TransparentFX
