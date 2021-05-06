@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5040452350476880556}
   - component: {fileID: 2897233923338220901}
   - component: {fileID: 7433609804595615474}
+  - component: {fileID: 4803002777082527474}
   m_Layer: 0
   m_Name: blue pickup
   m_TagString: pickupblue
@@ -123,3 +124,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f62148ccb6444a48a663659b85c359f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &4803002777082527474
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7400952788665462959}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2268d6cc2ce420b4c85ea3071e87ef8a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

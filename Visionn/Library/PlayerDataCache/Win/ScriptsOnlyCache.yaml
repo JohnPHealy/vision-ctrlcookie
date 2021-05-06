@@ -1,7 +1,37 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BlueDoor
+    - BlueKeycard
+    - GrabController
+    - GreenDoor
+    - GreenKeycard
+    - Pickups
+    - PlayerMovement
+    - PurpleDoor
+    - RedDoor
     - RedKeycard
+    - buttonontrigger1
+    - buttonontrigger10
+    - buttonontrigger11
+    - buttonontrigger12
+    - buttonontrigger2
+    - buttonontrigger3
+    - buttonontrigger4
+    - buttonontrigger5
+    - buttonontrigger6
+    - buttonontrigger7
+    - buttonontrigger8
+    - buttonontrigger9
+    - turnlampon
+    Cinemachine.dll:
+    - Cinemachine.CinemachineBrain
+    - Cinemachine.CinemachineComposer
+    - Cinemachine.CinemachinePipeline
+    - Cinemachine.CinemachinePixelPerfect
+    - Cinemachine.CinemachineTransposer
+    - Cinemachine.CinemachineTriggerAction
+    - Cinemachine.CinemachineVirtualCamera
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -22,8 +52,10 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TileDragAndDropManager
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
     Unity.InputSystem.dll:
+    - UnityEngine.InputSystem.InputActionAsset
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
+    - UnityEngine.InputSystem.PlayerInput
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
     Unity.RenderPipelines.Core.Runtime.dll:
     - UnityEngine.Rendering.UI.DebugUIHandlerBitField
@@ -85,7 +117,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/Single Screen.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -98,10 +130,32 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 62
+      Script: {instanceID: 0}
+    - Class: 70
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 734}
     - Class: 114
       Script: {instanceID: 1594}
     - Class: 114
@@ -111,75 +165,143 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1600}
     - Class: 114
-      Script: {instanceID: 1610}
+      Script: {instanceID: 1606}
     - Class: 114
-      Script: {instanceID: 1754}
+      Script: {instanceID: 1644}
     - Class: 114
-      Script: {instanceID: 2362}
+      Script: {instanceID: 1750}
     - Class: 114
-      Script: {instanceID: 2450}
+      Script: {instanceID: 1800}
     - Class: 114
-      Script: {instanceID: 3142}
+      Script: {instanceID: 2132}
+    - Class: 114
+      Script: {instanceID: 2168}
+    - Class: 114
+      Script: {instanceID: 2358}
+    - Class: 114
+      Script: {instanceID: 2446}
+    - Class: 114
+      Script: {instanceID: 2554}
+    - Class: 114
+      Script: {instanceID: 2628}
+    - Class: 114
+      Script: {instanceID: 2750}
+    - Class: 114
+      Script: {instanceID: 3140}
+    - Class: 114
+      Script: {instanceID: 3220}
+    - Class: 114
+      Script: {instanceID: 3288}
     - Class: 114
       Script: {instanceID: 3290}
     - Class: 114
-      Script: {instanceID: 3320}
+      Script: {instanceID: 3318}
     - Class: 114
-      Script: {instanceID: 3388}
+      Script: {instanceID: 3386}
     - Class: 114
-      Script: {instanceID: 3522}
+      Script: {instanceID: 3394}
     - Class: 114
-      Script: {instanceID: 3634}
+      Script: {instanceID: 3520}
     - Class: 114
-      Script: {instanceID: 3936}
+      Script: {instanceID: 3632}
     - Class: 114
-      Script: {instanceID: 4064}
+      Script: {instanceID: 3746}
     - Class: 114
-      Script: {instanceID: 4382}
+      Script: {instanceID: 3934}
     - Class: 114
-      Script: {instanceID: 5222}
+      Script: {instanceID: 4056}
     - Class: 114
-      Script: {instanceID: 5232}
+      Script: {instanceID: 4062}
     - Class: 114
-      Script: {instanceID: 5292}
+      Script: {instanceID: 4380}
     - Class: 114
-      Script: {instanceID: 5482}
+      Script: {instanceID: 4508}
     - Class: 114
-      Script: {instanceID: 5484}
+      Script: {instanceID: 4858}
     - Class: 114
-      Script: {instanceID: 5506}
+      Script: {instanceID: 5008}
     - Class: 114
-      Script: {instanceID: 5786}
+      Script: {instanceID: 5092}
     - Class: 114
-      Script: {instanceID: 5912}
+      Script: {instanceID: 5226}
     - Class: 114
-      Script: {instanceID: 6078}
+      Script: {instanceID: 5236}
     - Class: 114
-      Script: {instanceID: 6154}
+      Script: {instanceID: 5296}
     - Class: 114
-      Script: {instanceID: 6160}
+      Script: {instanceID: 5478}
     - Class: 114
-      Script: {instanceID: 6260}
+      Script: {instanceID: 5486}
     - Class: 114
-      Script: {instanceID: 6296}
+      Script: {instanceID: 5488}
     - Class: 114
-      Script: {instanceID: 6348}
+      Script: {instanceID: 5510}
     - Class: 114
-      Script: {instanceID: 6418}
+      Script: {instanceID: 5674}
     - Class: 114
-      Script: {instanceID: 6532}
+      Script: {instanceID: 5684}
     - Class: 114
-      Script: {instanceID: 6670}
+      Script: {instanceID: 5702}
     - Class: 114
-      Script: {instanceID: 6792}
+      Script: {instanceID: 5790}
     - Class: 114
-      Script: {instanceID: 6850}
+      Script: {instanceID: 5876}
     - Class: 114
-      Script: {instanceID: 7504}
+      Script: {instanceID: 5916}
     - Class: 114
-      Script: {instanceID: 7816}
+      Script: {instanceID: 5988}
     - Class: 114
-      Script: {instanceID: 8064}
+      Script: {instanceID: 6018}
+    - Class: 114
+      Script: {instanceID: 6084}
+    - Class: 114
+      Script: {instanceID: 6158}
+    - Class: 114
+      Script: {instanceID: 6164}
+    - Class: 114
+      Script: {instanceID: 6264}
+    - Class: 114
+      Script: {instanceID: 6300}
+    - Class: 114
+      Script: {instanceID: 6352}
+    - Class: 114
+      Script: {instanceID: 6392}
+    - Class: 114
+      Script: {instanceID: 6422}
+    - Class: 114
+      Script: {instanceID: 6488}
+    - Class: 114
+      Script: {instanceID: 6500}
+    - Class: 114
+      Script: {instanceID: 6536}
+    - Class: 114
+      Script: {instanceID: 6674}
+    - Class: 114
+      Script: {instanceID: 6750}
+    - Class: 114
+      Script: {instanceID: 6798}
+    - Class: 114
+      Script: {instanceID: 6842}
+    - Class: 114
+      Script: {instanceID: 6856}
+    - Class: 114
+      Script: {instanceID: 7116}
+    - Class: 114
+      Script: {instanceID: 7378}
+    - Class: 114
+      Script: {instanceID: 7510}
+    - Class: 114
+      Script: {instanceID: 7548}
+    - Class: 114
+      Script: {instanceID: 7778}
+    - Class: 114
+      Script: {instanceID: 7824}
+    - Class: 114
+      Script: {instanceID: 8042}
+    - Class: 114
+      Script: {instanceID: 8072}
+    - Class: 114
+      Script: {instanceID: 22798}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -188,6 +310,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
     - Class: 222
@@ -195,6 +319,14 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 19719996
+      Script: {instanceID: 0}
+    - Class: 156049354
+      Script: {instanceID: 0}
+    - Class: 483693784
+      Script: {instanceID: 0}
+    - Class: 1839735485
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -343,6 +475,12 @@ ScriptsOnlyBuild:
     className: RenderObjects
   - hash:
       serializedVersion: 2
+      Hash: c8a337e99d9a5f0c10e6c197805bea31
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GrabController
+  - hash:
+      serializedVersion: 2
       Hash: bd50beb95120324d8c4e8386692b6e82
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -419,6 +557,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
     className: XRSystemData
+  - hash:
+      serializedVersion: 2
+      Hash: afe2e27c31b37a1ef2cad0c54ef25f2a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RedDoor
   - hash:
       serializedVersion: 2
       Hash: 4a03f6b1ff196600b4f44591c20b6e2b
@@ -865,6 +1009,12 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
+      Hash: 9b416e5445735ac09f02d66abed5c7b9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GreenKeycard
+  - hash:
+      serializedVersion: 2
       Hash: 32fce7b97c39bff4b4f6c0f53f7e6bf1
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -937,6 +1087,12 @@ ScriptsOnlyBuild:
     className: CinemachineBlendListCamera
   - hash:
       serializedVersion: 2
+      Hash: 7e2f3db5c0fb4f925cd52646ee899b2b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PurpleDoor
+  - hash:
+      serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -971,6 +1127,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_InputField
+  - hash:
+      serializedVersion: 2
+      Hash: afe2e27c31b37a1ef2cad0c54ef25f2a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GreenDoor
   - hash:
       serializedVersion: 2
       Hash: d1b036fbe5adcfe372c77a9d812c7e37
@@ -1183,6 +1345,12 @@ ScriptsOnlyBuild:
     className: CinemachineConfiner2D
   - hash:
       serializedVersion: 2
+      Hash: afe2e27c31b37a1ef2cad0c54ef25f2a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BlueDoor
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1375,6 +1543,12 @@ ScriptsOnlyBuild:
     className: FilmGrain
   - hash:
       serializedVersion: 2
+      Hash: 57f18a6852efab9623b1f643d6fb83ae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RedKeycard
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1555,6 +1729,12 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
+      Hash: de1d1c040525eb09e0c953a587045b7b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BlueKeycard
+  - hash:
+      serializedVersion: 2
       Hash: b5eb08b578a2f2d80bb106cbe65ab501
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -1691,55 +1871,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
-  - hash:
-      serializedVersion: 2
-      Hash: c8a337e99d9a5f0c10e6c197805bea31
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GrabController
-  - hash:
-      serializedVersion: 2
-      Hash: de1d1c040525eb09e0c953a587045b7b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BlueKeycard
-  - hash:
-      serializedVersion: 2
-      Hash: 57f18a6852efab9623b1f643d6fb83ae
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: RedKeycard
-  - hash:
-      serializedVersion: 2
-      Hash: 9b416e5445735ac09f02d66abed5c7b9
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GreenKeycard
-  - hash:
-      serializedVersion: 2
-      Hash: afe2e27c31b37a1ef2cad0c54ef25f2a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BlueDoor
-  - hash:
-      serializedVersion: 2
-      Hash: afe2e27c31b37a1ef2cad0c54ef25f2a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: RedDoor
-  - hash:
-      serializedVersion: 2
-      Hash: afe2e27c31b37a1ef2cad0c54ef25f2a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GreenDoor
-  - hash:
-      serializedVersion: 2
-      Hash: 7e2f3db5c0fb4f925cd52646ee899b2b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PurpleDoor
   platform: 5
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/regar/Documents/GitHub/vision-ctrlcookie/Visionn/TestBuild/Visionn.exe
+  - Assets/Scenes/Single Screen.unity
+  playerPath: C:/Users/regar/Documents/GitHub/vision-ctrlcookie/Visionn/tests/Visionn.exe
