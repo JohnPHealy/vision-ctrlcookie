@@ -296,6 +296,7 @@
 -r:"Library/Bee/artifacts/500b0aP.dag/Unity.Timeline.ref.dll"
 -r:"Library/Bee/artifacts/500b0aP.dag/UnityEngine.UI.ref.dll"
 "Assets/mov.cs"
+"Assets/Scripts/AudioManager.cs"
 "Assets/Scripts/BlueDoor.cs"
 "Assets/Scripts/BlueKeycard.cs"
 "Assets/Scripts/button4stuff.cs"

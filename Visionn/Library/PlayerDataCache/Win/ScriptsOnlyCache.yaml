@@ -3,7 +3,6 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - BlueDoor
     - BlueKeycard
-    - GrabController
     - GreenDoor
     - GreenKeycard
     - Pickups
@@ -171,8 +170,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1800}
     - Class: 114
-      Script: {instanceID: 2132}
-    - Class: 114
       Script: {instanceID: 2168}
     - Class: 114
       Script: {instanceID: 2358}
@@ -183,123 +180,123 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2628}
     - Class: 114
-      Script: {instanceID: 2750}
+      Script: {instanceID: 2752}
     - Class: 114
-      Script: {instanceID: 3140}
+      Script: {instanceID: 3142}
     - Class: 114
-      Script: {instanceID: 3220}
-    - Class: 114
-      Script: {instanceID: 3288}
+      Script: {instanceID: 3222}
     - Class: 114
       Script: {instanceID: 3290}
     - Class: 114
-      Script: {instanceID: 3318}
+      Script: {instanceID: 3292}
     - Class: 114
-      Script: {instanceID: 3386}
+      Script: {instanceID: 3320}
     - Class: 114
-      Script: {instanceID: 3394}
+      Script: {instanceID: 3388}
     - Class: 114
-      Script: {instanceID: 3520}
+      Script: {instanceID: 3396}
     - Class: 114
-      Script: {instanceID: 3632}
+      Script: {instanceID: 3522}
     - Class: 114
-      Script: {instanceID: 3746}
+      Script: {instanceID: 3634}
     - Class: 114
-      Script: {instanceID: 3934}
+      Script: {instanceID: 3748}
     - Class: 114
-      Script: {instanceID: 4056}
+      Script: {instanceID: 3936}
     - Class: 114
-      Script: {instanceID: 4062}
+      Script: {instanceID: 4058}
     - Class: 114
-      Script: {instanceID: 4380}
+      Script: {instanceID: 4064}
     - Class: 114
-      Script: {instanceID: 4508}
+      Script: {instanceID: 4382}
     - Class: 114
-      Script: {instanceID: 4858}
+      Script: {instanceID: 4510}
     - Class: 114
-      Script: {instanceID: 5008}
+      Script: {instanceID: 4860}
     - Class: 114
-      Script: {instanceID: 5092}
+      Script: {instanceID: 5010}
     - Class: 114
-      Script: {instanceID: 5226}
+      Script: {instanceID: 5094}
     - Class: 114
-      Script: {instanceID: 5236}
+      Script: {instanceID: 5228}
     - Class: 114
-      Script: {instanceID: 5296}
+      Script: {instanceID: 5238}
     - Class: 114
-      Script: {instanceID: 5478}
+      Script: {instanceID: 5298}
     - Class: 114
-      Script: {instanceID: 5486}
+      Script: {instanceID: 5480}
     - Class: 114
       Script: {instanceID: 5488}
     - Class: 114
-      Script: {instanceID: 5510}
+      Script: {instanceID: 5490}
     - Class: 114
-      Script: {instanceID: 5674}
+      Script: {instanceID: 5512}
     - Class: 114
-      Script: {instanceID: 5684}
+      Script: {instanceID: 5676}
     - Class: 114
-      Script: {instanceID: 5702}
+      Script: {instanceID: 5686}
     - Class: 114
-      Script: {instanceID: 5790}
+      Script: {instanceID: 5704}
     - Class: 114
-      Script: {instanceID: 5876}
+      Script: {instanceID: 5792}
     - Class: 114
-      Script: {instanceID: 5916}
+      Script: {instanceID: 5878}
     - Class: 114
-      Script: {instanceID: 5988}
+      Script: {instanceID: 5918}
     - Class: 114
-      Script: {instanceID: 6018}
+      Script: {instanceID: 5990}
     - Class: 114
-      Script: {instanceID: 6084}
+      Script: {instanceID: 6020}
     - Class: 114
-      Script: {instanceID: 6158}
+      Script: {instanceID: 6086}
     - Class: 114
-      Script: {instanceID: 6164}
+      Script: {instanceID: 6160}
     - Class: 114
-      Script: {instanceID: 6264}
+      Script: {instanceID: 6166}
     - Class: 114
-      Script: {instanceID: 6300}
+      Script: {instanceID: 6266}
     - Class: 114
-      Script: {instanceID: 6352}
+      Script: {instanceID: 6302}
     - Class: 114
-      Script: {instanceID: 6392}
+      Script: {instanceID: 6354}
     - Class: 114
-      Script: {instanceID: 6422}
+      Script: {instanceID: 6394}
     - Class: 114
-      Script: {instanceID: 6488}
+      Script: {instanceID: 6424}
     - Class: 114
-      Script: {instanceID: 6500}
+      Script: {instanceID: 6490}
     - Class: 114
-      Script: {instanceID: 6536}
+      Script: {instanceID: 6502}
     - Class: 114
-      Script: {instanceID: 6674}
+      Script: {instanceID: 6538}
     - Class: 114
-      Script: {instanceID: 6750}
+      Script: {instanceID: 6676}
     - Class: 114
-      Script: {instanceID: 6798}
+      Script: {instanceID: 6752}
     - Class: 114
-      Script: {instanceID: 6842}
+      Script: {instanceID: 6800}
     - Class: 114
-      Script: {instanceID: 6856}
+      Script: {instanceID: 6844}
     - Class: 114
-      Script: {instanceID: 7116}
+      Script: {instanceID: 6858}
     - Class: 114
-      Script: {instanceID: 7378}
+      Script: {instanceID: 7118}
     - Class: 114
-      Script: {instanceID: 7510}
+      Script: {instanceID: 7380}
     - Class: 114
-      Script: {instanceID: 7548}
+      Script: {instanceID: 7512}
     - Class: 114
-      Script: {instanceID: 7778}
+      Script: {instanceID: 7550}
     - Class: 114
-      Script: {instanceID: 7824}
+      Script: {instanceID: 7780}
     - Class: 114
-      Script: {instanceID: 8042}
+      Script: {instanceID: 7826}
     - Class: 114
-      Script: {instanceID: 8072}
+      Script: {instanceID: 8044}
     - Class: 114
-      Script: {instanceID: 22828}
+      Script: {instanceID: 8074}
+    - Class: 114
+      Script: {instanceID: 26394}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -591,6 +588,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: TimelineAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AudioManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1085,7 +1088,7 @@ ScriptsOnlyBuild:
     className: CinemachineBlendListCamera
   - hash:
       serializedVersion: 2
-      Hash: 7e2f3db5c0fb4f925cd52646ee899b2b
+      Hash: d6cde84a845e785328c38308c5a134f8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PurpleDoor
@@ -1247,7 +1250,7 @@ ScriptsOnlyBuild:
     className: button4stuff
   - hash:
       serializedVersion: 2
-      Hash: 035e51986af82a137f33b38a000aff86
+      Hash: 3d871db96ceda16ed27e1370de4666ea
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement
@@ -1872,4 +1875,4 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/Single Screen.unity
-  playerPath: C:/Users/regar/Documents/GitHub/vision-ctrlcookie/Visionn/tests/Visionn.exe
+  playerPath: C:/Users/regar/Documents/GitHub/vision-ctrlcookie/Visionn/FinalBuild/Visionn.exe

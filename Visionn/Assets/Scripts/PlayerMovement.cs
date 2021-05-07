@@ -48,7 +48,6 @@ public class PlayerMovement : MonoBehaviour
         if(currentVertSpeed < -0.5 && canJump && !playedcheck)
         {
             playedcheck = true;
-            Debug.Log("PUTHITSOUNDHERE");
             audioFell.Play(0);
 
         }
@@ -87,11 +86,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (bluepickup)
         {
-            jumpForce = 8;
+            jumpForce = 10;
         }
         if (redpickup)
         {
-            moveSpeed = 12;
+            moveSpeed = 13;
         }
     }
 
