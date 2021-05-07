@@ -12,6 +12,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Collider2D groundCheck;
     [SerializeField] private LayerMask groundLayers;
     [SerializeField] private bool cancelJumpEnabled;
+    [SerializeField] AudioSource audioData;
+    [SerializeField] AudioSource audioDown;
+    [SerializeField] AudioSource audioFell;
+
 
     private float moveDir;
     private Rigidbody2D myRB;
@@ -22,21 +26,33 @@ public class PlayerMovement : MonoBehaviour
     private int moving = 0;
     public bool onPressable;
     public bool presseddowncorrect, dnkey, onKey;
-    private bool bluepickup, redpickup;
+    private bool bluepickup, redpickup, played, playedcheck;
+    
+
 
     private void Start()
     {
         myRB = GetComponent<Rigidbody2D>();
         mySprite = GetComponentInChildren<SpriteRenderer>();
+
     }
 
-     void Update()
+    void Update()
     {
         currentSpeed = myRB.velocity.x;
         currentVertSpeed = myRB.velocity.y;
         animator.SetFloat("speed", Mathf.Abs(currentSpeed + moving));
         animator.SetBool("canjump", canJump);
         animator.SetFloat("vertspeed", currentVertSpeed);
+
+        if(currentVertSpeed < -0.5 && canJump && !playedcheck)
+        {
+            playedcheck = true;
+            Debug.Log("PUTHITSOUNDHERE");
+            audioFell.Play(0);
+
+        }
+
     }
 
     private void FixedUpdate()
@@ -66,6 +82,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             canJump = false;
+            playedcheck = false;
         }
 
         if (bluepickup)
@@ -94,6 +111,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (context.started)
             {
+                audioData.Play(0);
                 myRB.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
                 canJump = false;
             }
@@ -107,23 +125,26 @@ public class PlayerMovement : MonoBehaviour
 
     public void Down(InputAction.CallbackContext context)
     {
-        if (onKey)
-        {
-            if (!dnkey)
-            {
-                dnkey = true;
-            }
-
-            else dnkey = false;
-        }
 
         if (onPressable)
         { if (!presseddowncorrect)
             {
+                if (!played)
+                {
+                    audioDown.Play(0);
+                }
+                played = true;
                 presseddowncorrect = true;
             }
 
-            else presseddowncorrect = false;
+            else if (presseddowncorrect)
+            {
+                if (played)
+                {
+                    played = false;
+                }
+                presseddowncorrect = false;
+            }
         }
        
     }

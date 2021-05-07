@@ -7,6 +7,8 @@ public class PurpleDoor : MonoBehaviour
     public bool destroyself;
     private bool played;
     [SerializeField] private AudioSource m_MyAudioSource;
+    [SerializeField] private AudioSource dingsource;
+
 
     // Update is called once per frame
     void Update()
@@ -21,10 +23,11 @@ public class PurpleDoor : MonoBehaviour
             if (!m_MyAudioSource.isPlaying && !played)
             {
                 played = true;
-                m_MyAudioSource.Play();
+                m_MyAudioSource.PlayDelayed(2);
+                dingsource.Play();
             }
 
-            Destroy(gameObject, 2);
+            Destroy(gameObject, 5);
         }
 
     }
